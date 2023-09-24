@@ -1,5 +1,6 @@
 #!/bin/bash
 git checkout prd
 git merge master
-git tag "$(date +"%Y.%m.%d.%H.%M.%S")"
-
+revision = date +"%Y.%m.%d.%H.%M.%S"
+git tag $revision
+echo "Added revision: " $revision
