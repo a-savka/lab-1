@@ -1,6 +1,6 @@
 #!/bin/bash
 git checkout prd
-git merge master
+git merge dev
 revision=$(date +"%Y.%m.%d.%H.%M.%S")
 git tag $revision
 echo "Added revision: " $revision
